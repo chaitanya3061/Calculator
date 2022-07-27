@@ -1,0 +1,65 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    outline:none;
+}
+body{
+    background-image:url("digits.jpg");
+}
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.calculator{
+    background-color: rgb(163, 163, 163);
+    padding: 15px;
+    border-radius: 30px;
+    box-shadow: inset 5px 5px 12px white,
+    5px 5px 12px white;
+    display: grid;
+    width: 340px;
+    
+    grid-template-columns:repeat(4,80px);
+}
+input{
+    grid-column: span 4;
+    height: 70px;
+    width: 300px;
+    background-color:white;
+    box-shadow:inset -5px -5px 12px white,
+                 inset 5px 5px 12px rgb(28, 21, 21) ;
+    border-radius: 30px;
+    border:none;
+    text-align: end;
+    font-size: 50px;
+    margin: auto;
+    margin: 30px 0px;
+}
+button{
+    height: 48px;
+    width: 48px;
+    background-color: white;
+    box-shadow:  -5px -5px 12px white,
+    5px 5px 12px black;
+    border: none;
+    border-radius: 50%;
+    margin: 8px;
+    cursor: pointer;
+    
+}
+button:hover{
+    color: rgb(222, 35, 35);
+    background-color: rgb(163, 163, 163);
+}
+.eq{
+    width: 125px;
+    border-radius: 50px;
+    background-color: white;
+    box-shadow:  -5px -5px 12px white,
+    5px 5px 12px black;
+}
